@@ -1,14 +1,18 @@
 export class HomePage {
     constructor() {
         this.signUp = "//span[contains(text(),'Sign up')]",
-            this.signIn = "//span[contains(text(),'Sign in')]"
+            this.signIn = "//span[contains(text(),'Sign in')]",
+            this.welcomeSignGotIt = "//span[contains(text(),'Got it')]"
     }
 
     clickOnSignIn() {
-        cy.get(this.signIn).click()
+        cy.xpath(this.signIn).click()
+    }
+    clickOnGotIt() {
+        cy.xpath(this.welcomeSignGotIt).click();
     }
     clickOnSignUp() {
-        cy.get(this.signUp).click()
+        cy.xpath(this.signUp).click()
     }
 
 }
