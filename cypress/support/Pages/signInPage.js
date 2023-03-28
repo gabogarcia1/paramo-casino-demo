@@ -1,4 +1,4 @@
-export class signInPage {
+export class SignInPage {
     constructor() {
 
     }

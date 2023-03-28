@@ -1,13 +1,13 @@
 export class RegistrationSuccess {
     constructor() {
-        this.urlSuccess='registrationSuccess'
-        this.viewProfile='//span[contains(text(),"View Profile")]'
+        this.urlSuccess = 'registrationSuccess'
+        this.viewProfile = '//span[contains(text(),"View Profile")]'
 
     }
-    verifyRegistrationSuccess(){
-        cy.url({timeout:10000}).should('include',this.urlSuccess)
+    verifyRegistrationSuccess() {
+        cy.url({ timeout: 10000 }).should('include', this.urlSuccess)
     }
-    clickOnViewProfile(){
+    clickOnViewProfile() {
         cy.xpath(this.viewProfile).click
     }
 }

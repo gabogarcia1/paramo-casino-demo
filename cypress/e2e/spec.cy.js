@@ -1,14 +1,16 @@
 /// <reference types="cypress"/>
 
-import { HomePage } from "../support/Pages/homePage"
-import { signUpPage } from "../support/Pages/signUpPage";
+import { HomePage } from "../support/Pages/HomePage"
+import { SignUpPage } from "../support/Pages/SignUpPage";
 import { RegistrationSuccess } from "../support/Pages/RegistrationSuccess";
+import { ProfilePage } from "../support/Pages/ProfilePage";
 
 describe('empty spec', () => {
   let userData;
   const homePage= new HomePage();
-  const registration= new signUpPage();
+  const registration= new SignUpPage();
   const registrationSuccess = new RegistrationSuccess();
+  const profilePage = new ProfilePage();
 
   before('Set up', () => {
     cy.fixture("userData").then(data => {
@@ -21,7 +23,7 @@ describe('empty spec', () => {
     userData.email=`email_test_${randomNumber}@email.com`
   })
 
-  it('Sign up and log in', () => {
+  it('Sign up and view profile', () => {
     cy.visit('/')
     homePage.clickOnGotIt();
     homePage.clickOnSignUp();
@@ -35,6 +37,7 @@ describe('empty spec', () => {
     registration.clickOnCreateAccount()
     registrationSuccess.verifyRegistrationSuccess()
     registrationSuccess.clickOnViewProfile()
+    profilePage.checkUrl();
   })
 
 
