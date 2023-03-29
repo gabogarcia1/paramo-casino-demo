@@ -6,6 +6,7 @@
 ```sh
 git clone https://github.com/gabogarcia1/paramo-casino-demo.git
 npm install
+npm install cypress@10.3.0 --save-dev
 ```
 
 ## Requirements:
