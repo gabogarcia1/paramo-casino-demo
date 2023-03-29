@@ -1,6 +1,36 @@
 {
-  "email": "emailtest@email.com",
-  "phoneNumber" : 399456456,
-  "currency": ["USD","EUR","ILS", "mLTC","mDOGE","USDTT","USDTE","mBCH","mETH","BYR"],
-  "Password": "PasswordTest123!"
+  "ValidUser":{
+    "email": "emailtest@email.com",
+    "phoneNumber": 399456456,
+    "currency": [
+      "USD",
+      "EUR",
+      "ILS",
+      "mLTC",
+      "mDOGE",
+      "USDTT",
+      "USDTE",
+      "mBCH",
+      "mETH",
+      "BYR"
+    ],
+    "Password": "PasswordTest123!"
+  },
+  "InvalidUser":{
+    "email": "emailtes_invalid@email.com",
+    "phoneNumber": 399456456,
+    "currency": [
+      "USD",
+      "EUR",
+      "ILS",
+      "mLTC",
+      "mDOGE",
+      "USDTT",
+      "USDTE",
+      "mBCH",
+      "mETH",
+      "BYR"
+    ],
+    "Password": "PasswordTestInvalid123!"
+  }
 }

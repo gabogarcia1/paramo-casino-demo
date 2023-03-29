@@ -1,6 +1,0 @@
-export class SignInPage {
-    constructor() {
-
-    }
-
-}

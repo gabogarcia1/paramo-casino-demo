@@ -7,5 +7,7 @@ module.exports = defineConfig({
     },
     baseUrl: "https://demo.casino/",
     watchForFileChanges: false,
+    chromeWebSecurity: false 
+
   },
 });
